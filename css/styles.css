@@ -1,0 +1,256 @@
+/* ---------------------------------------------------------------
+   AI Explained - shared stylesheet
+
+   Colours are set as custom properties in one place so the whole
+   palette can be swapped by editing this block alone. Trial 3
+   compares two palettes, so this needs to be a one-edit change.
+   --------------------------------------------------------------- */
+
+:root {
+  /* Palette A (placeholder until Trial 3 decides) */
+  --bg: #ffffff;
+  --surface: #f3f6fa;
+  --text: #1a1d21;
+  --muted: #55606d;
+  --accent: #1f4e79;
+  --accent-text: #ffffff;
+  --border: #d5dde6;
+
+  --wrap: 1100px;
+  --radius: 6px;
+  --gap: 1rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a { color: var(--accent); }
+
+/* Focus must stay visible. Keyboard navigation is tested in Milestone 6. */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  background: var(--accent);
+  color: var(--accent-text);
+  padding: 0.6rem 1rem;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* ---------------------------------------------------------------
+   Header and navigation
+   --------------------------------------------------------------- */
+
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+}
+.logo span { color: var(--accent); }
+
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  display: block;
+  padding: 0.4rem 0;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible { color: var(--accent); }
+
+.primary-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Hamburger button. Hidden on desktop, shown under the breakpoint. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-toggle .bars {
+  display: inline-block;
+  width: 18px;
+}
+.nav-toggle .bars span {
+  display: block;
+  height: 2px;
+  background: var(--text);
+  margin: 3px 0;
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .nav-toggle { display: flex; }
+
+  /* Option B only: the menu is collapsed until the button opens it.
+     Option A leaves the nav visible and never adds this class. */
+  .primary-nav.is-collapsible {
+    display: none;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    padding-top: 0.5rem;
+  }
+  .primary-nav.is-collapsible.is-open { display: block; }
+
+  .primary-nav.is-collapsible ul { flex-direction: column; gap: 0; }
+  .primary-nav.is-collapsible a { padding: 0.6rem 0; }
+  .primary-nav.is-collapsible a[aria-current="page"] {
+    border-bottom: none;
+    border-left: 3px solid var(--accent);
+    padding-left: 0.6rem;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .nav-toggle { display: none; }
+  .primary-nav { display: block !important; }
+}
+
+/* ---------------------------------------------------------------
+   Hero
+   --------------------------------------------------------------- */
+
+.hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.hero .tagline {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.hero p { max-width: 60ch; }
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: var(--accent-text);
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radius);
+}
+.button:hover { opacity: 0.9; }
+
+/* ---------------------------------------------------------------
+   Main content
+   --------------------------------------------------------------- */
+
+main { padding: 2.5rem 0; }
+
+main h2 { margin-top: 2rem; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  background: var(--bg);
+}
+.card h3 { margin-top: 0; }
+.card p { color: var(--muted); margin-bottom: 0; }
+
+/* ---------------------------------------------------------------
+   Footer
+   --------------------------------------------------------------- */
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
