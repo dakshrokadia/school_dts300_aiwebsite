@@ -210,6 +210,33 @@ main { padding: 2.5rem 0; }
 
 main h2 { margin-top: 2rem; }
 
+/* Smaller version of the hero, for the pages that are not the home page. */
+.page-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
+}
+.page-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.2;
+}
+.page-header p {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--muted);
+}
+
+/* Body text gets a narrower measure than the page. Long lines are hard to
+   follow, and this site is mostly reading. */
+.prose { max-width: 68ch; }
+.prose h2:first-child { margin-top: 0; }
+.prose ul { padding-left: 1.2rem; }
+.prose li { margin-bottom: 0.4rem; }
+
+/* Words defined in the glossary, linked on first use. */
+.term { font-weight: 600; }
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
