@@ -1,23 +1,15 @@
-/* Mobile menu toggle (Trial 1, option B).
+// Opens and closes the menu on phones.
 
-   Only runs if the toggle button is on the page, so option A can share
-   this file without anything happening. */
+var button = document.querySelector(".nav-toggle");
+var menu = document.querySelector(".primary-nav");
 
-var toggle = document.querySelector(".nav-toggle");
-var nav = document.querySelector(".primary-nav.is-collapsible");
+button.addEventListener("click", function () {
+  menu.classList.toggle("open");
 
-if (toggle && nav) {
-  toggle.addEventListener("click", function () {
-    var open = nav.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-
-  // Escape closes the menu and puts focus back on the button.
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && nav.classList.contains("is-open")) {
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.focus();
-    }
-  });
-}
+  // Tells screen readers whether the menu is open or closed
+  if (menu.classList.contains("open")) {
+    button.setAttribute("aria-expanded", "true");
+  } else {
+    button.setAttribute("aria-expanded", "false");
+  }
+});
