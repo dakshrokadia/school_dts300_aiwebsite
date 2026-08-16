@@ -1,15 +1,15 @@
 // Opens and closes the menu on phones.
 
-var button = document.querySelector(".nav-toggle");
-var menu = document.querySelector(".primary-nav");
+var menuButton = document.querySelector(".menu-button");
+var mainMenu = document.querySelector(".main-menu");
 
-button.addEventListener("click", function () {
-  menu.classList.toggle("open");
+menuButton.addEventListener("click", function () {
+  mainMenu.classList.toggle("open");
 
   // Tells screen readers whether the menu is open or closed
-  if (menu.classList.contains("open")) {
-    button.setAttribute("aria-expanded", "true");
+  if (mainMenu.classList.contains("open")) {
+    menuButton.setAttribute("aria-expanded", "true");
   } else {
-    button.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-expanded", "false");
   }
 });
