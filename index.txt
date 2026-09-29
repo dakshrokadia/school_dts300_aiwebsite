@@ -1,0 +1,30 @@
+Skip to content
+AI Explained Menu
+	•	Home
+	•	What is AI?
+	•	Applications
+	•	Ethics
+	•	History
+	•	Glossary
+	•	Quiz
+Artificial intelligence, explained properly
+No jargon, no hype, and nothing assumed.
+Artificial intelligence turns up in the news every day, usually described either as the answer to everything or the end of the world. This site explains what it actually is, where it is already being used, and what people are arguing about, in language that does not assume you have seen any of it before.
+Start with the basics
+
+AI is software, not a robot. Most of it runs on ordinary computer hardware like this.
+Where to start
+	•	What is AI? The core ideas, explained without the jargon. Start here if the term has never been properly explained to you.
+	•	Applications Where AI is already being used, from the recommendations on your phone to medical imaging.
+	•	Ethics Bias, privacy, jobs and misinformation. The arguments people are actually having.
+	•	History How the field got from a 1950s thought experiment to the tools people use today.
+	•	Glossary Every technical word used on this site, defined in one place.
+	•	Quiz A short quiz to check what stuck. Every answer is somewhere on this site.
+© 2026 AI Explained. Built for AS91907.
+	•	Home
+	•	What is AI?
+	•	Applications
+	•	Ethics
+	•	History
+	•	Glossary
+	•	Quiz

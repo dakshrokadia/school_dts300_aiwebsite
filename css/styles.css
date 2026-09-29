@@ -422,6 +422,30 @@ main h2 {
 }
 
 
+/* Pictures on the content pages */
+
+figure {
+  margin: 24px 0;
+}
+
+/* width 100% with height auto means the picture shrinks to fit a phone
+   screen instead of running off the side */
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+/* The caption underneath a picture */
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--grey-text);
+}
+
+
 /* Footer */
 
 .site-footer {
