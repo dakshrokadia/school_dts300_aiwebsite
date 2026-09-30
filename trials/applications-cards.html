@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trial 4, option B: card grid - AI Explained</title>
+<meta name="description" content="Where artificial intelligence is already being used, from phone recommendations to medical scans.">
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  /* Trial 4, option B: uses the same card style as the home page.
+     Headings are a bit smaller so the cards don't look crowded. */
+  .card h2 { margin-top: 0; font-size: 20px; }
+  .card p + p { margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="page-width header-row">
+    <a class="site-logo" href="../index.html">AI <span>Explained</span></a>
+
+    <button class="menu-button" aria-expanded="false" aria-controls="main-menu">
+      <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../what-is-ai.html">What is AI?</a></li>
+        <li><a href="../applications.html" aria-current="page">Applications</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../history.html">History</a></li>
+        <li><a href="../glossary.html">Glossary</a></li>
+        <li><a href="../quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="page-width">
+    <h1>Applications of AI</h1>
+    <p>Most people used AI several times today without noticing. Here is where it actually turns up.</p>
+  </div>
+</div>
+
+<main id="main">
+  <div class="page-width">
+   
+    <ul class="card-grid">
+      <li class="card">
+        <h2>Recommendations</h2>
+    <p>
+      Netflix deciding what to show you next, Spotify building a playlist,
+      YouTube picking the next video. These all work the same way: the system
+      looks at what you have watched or listened to, finds other people with
+      similar habits, and suggests what they liked.
+    </p>
+    <p>
+      This is probably the most common use of AI in daily life, and it is also
+      the least noticed, because it looks like the app just knowing you.
+    </p>
+      </li>
+      <li class="card">
+        <h2>Chatbots and writing tools</h2>
+    <p>
+      Tools like ChatGPT are built on <strong>large language models</strong>,
+      trained on huge amounts of text so they can predict what words should come
+      next. That is genuinely all they are doing, which is why they can write a
+      convincing paragraph on a subject they get factually wrong.
+    </p>
+    <p>
+      They are used for drafting emails, summarising documents, answering
+      customer service questions, and helping with code. The
+      <a href="../ethics.html">ethics page</a> covers the problems this creates.
+    </p>
+      </li>
+      <li class="card">
+        <h2>Medical imaging</h2>
+    <p>
+      AI systems are trained on thousands of scans that doctors have already
+      labelled, then used to flag things a human might miss. They are used for
+      spotting tumours, reading eye scans for signs of diabetes, and picking up
+      early signs of disease in X-rays.
+    </p>
+    <p>
+      Importantly, these systems assist rather than replace. A doctor still makes
+      the call. The system points at things worth a second look.
+    </p>
+      </li>
+      <li class="card">
+        <h2>Self-driving cars</h2>
+    <p>
+      Cars like Waymo's use cameras and sensors to work out what is around them,
+      then decide what to do about it. The system has to recognise pedestrians,
+      read signs, judge how fast other cars are going, and handle situations
+      nobody specifically trained it for.
+    </p>
+    <p>
+      That last part is the hard bit, and it is why fully self-driving cars have
+      taken far longer to arrive than people predicted.
+    </p>
+      </li>
+      <li class="card">
+        <h2>Translation</h2>
+    <p>
+      Google Translate and similar tools got dramatically better around 2016 when
+      they switched to <strong>neural networks</strong>. Before that they largely
+      translated phrase by phrase. Now they work with the whole sentence, which
+      is why the results stopped sounding quite so much like a robot.
+    </p>
+      </li>
+      <li class="card">
+        <h2>Fraud detection</h2>
+    <p>
+      Banks use AI to spot transactions that do not fit your normal pattern. If
+      your card is suddenly used overseas at 3am, the system flags it. It learned
+      what normal looks like for you, rather than following a fixed rule.
+    </p>
+    <p>
+      This is also a good example of the trade-off: make it too sensitive and it
+      blocks real purchases, too relaxed and it misses fraud.
+    </p>
+      </li>
+    </ul>
+
+   <div class="text-column">
+
+    <h2>What these have in common</h2>
+    <p>
+      Every example here works by learning from examples rather than following
+      rules somebody wrote, which is the core idea from the
+      <a href="../what-is-ai.html">what is AI page</a>. None of them understand what
+      they are doing. They are all very good at finding patterns.
+    </p>
+
+   </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width footer-row">
+    <p>&copy; 2026 AI Explained. Built for AS91907.</p>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../what-is-ai.html">What is AI?</a></li>
+      <li><a href="../applications.html">Applications</a></li>
+      <li><a href="../ethics.html">Ethics</a></li>
+      <li><a href="../history.html">History</a></li>
+      <li><a href="../glossary.html">Glossary</a></li>
+      <li><a href="../quiz.html">Quiz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
