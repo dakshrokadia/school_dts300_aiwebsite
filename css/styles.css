@@ -406,6 +406,24 @@ main h2 {
   background: #fdf3f3;
 }
 
+/* Questions that were skipped. A dashed grey border so they don't look the
+   same as wrong ones. No background colour, so the green answer text still
+   passes the contrast check. */
+.question.unanswered {
+  border: 1px dashed var(--grey-text);
+}
+
+/* The right answer, shown after a question is got wrong or skipped */
+.show-answer {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.show-answer::after {
+  content: " (right answer)";
+  font-weight: normal;
+}
+
 /* The score message underneath the questions */
 .quiz-result {
   margin-top: 20px;
