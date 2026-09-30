@@ -289,6 +289,17 @@ main h2 {
   margin-bottom: 0;
 }
 
+/* On the Applications page the cards use h2 headings, so they are made a
+   bit smaller to stop the cards looking crowded. Picked in Trial 4. */
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card p + p {
+  margin-top: 12px;
+}
+
 
 /* The list of dates on the history page */
 
