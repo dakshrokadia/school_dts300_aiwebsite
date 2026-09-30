@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trial 2, option B: JavaScript timeline - AI Explained</title>
+<meta name="description" content="A timeline of the key moments in artificial intelligence, from Alan Turing in 1950 to ChatGPT in 2022.">
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  /* Trial 2, option B: buttons styled to look the same as the details tag */
+  .timeline-button { display: block; width: 100%; text-align: left; background: none; border: none;
+    padding: 10px 0; font: inherit; font-weight: bold; color: var(--text); cursor: pointer; }
+  .timeline-button::before { content: "\25B6"; font-size: 11px; margin-right: 8px; }
+  .timeline-button[aria-expanded="true"]::before { content: "\25BC"; }
+  .timeline-button:hover { color: var(--blue); }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="page-width header-row">
+    <a class="site-logo" href="../index.html">AI <span>Explained</span></a>
+
+    <button class="menu-button" aria-expanded="false" aria-controls="main-menu">
+      <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../what-is-ai.html">What is AI?</a></li>
+        <li><a href="../applications.html">Applications</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../history.html" aria-current="page">History</a></li>
+        <li><a href="../glossary.html">Glossary</a></li>
+        <li><a href="../quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="page-width">
+    <h1>History of AI</h1>
+    <p>AI is much older than most people think. The idea is from 1950. Click any date to read more about it.</p>
+  </div>
+</div>
+
+<main id="main">
+  <div class="page-width">
+   <div class="text-column">
+
+    <div class="timeline">
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">1950</span> Turing asks if machines can think</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          Alan Turing published a paper suggesting a test: if a person having a
+          conversation cannot tell whether they are talking to a human or a
+          machine, does it matter which it is? This became known as the Turing
+          test. Note that no computer existed at the time that could get
+          anywhere near it.
+        </p>
+        <figure>
+          <img src="../images/turing-test.png" alt="Diagram of the Turing test. A questioner sends questions to both a computer and a human, and gets answers back from both without being told which is which.">
+          <figcaption>The Turing test. The questioner talks to both and has to work out which one is the machine.</figcaption>
+        </figure>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">1956</span> The name is invented</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          A summer workshop at Dartmouth College brought together the researchers
+          working on the idea, and John McCarthy came up with the term
+          "artificial intelligence" for the proposal. This is usually treated as
+          the moment the field officially started.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">1966</span> ELIZA, the first chatbot</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          Joseph Weizenbaum built a program that imitated a therapist by turning
+          whatever you typed back into a question. It was simple and followed
+          fixed rules, but people talked to it as though it understood them,
+          which unsettled Weizenbaum enough that he spent years warning about it.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">1970s</span> The first AI winter</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          Researchers had promised a great deal and delivered much less, so
+          governments cut the funding. The field went quiet. This happened again
+          in the late 1980s, and the pattern of big promises followed by
+          disappointment is worth keeping in mind when reading AI news today.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">1980s</span> Expert systems</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          Businesses started using programs that followed long lists of rules
+          written by specialists, for jobs like diagnosing equipment faults. They
+          worked, but only inside the exact area they were built for, and keeping
+          the rules up to date turned out to be an enormous amount of work.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">1997</span> Deep Blue beats Kasparov</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          IBM's chess computer beat the world champion Garry Kasparov in a match.
+          It did this mostly by checking an enormous number of possible moves
+          very quickly rather than by anything resembling thinking, but it was
+          the first time a machine beat the best human at something people
+          treated as a test of intelligence.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">2012</span> Image recognition suddenly works</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          A system called AlexNet won an image recognition competition by such a
+          large margin that the field changed direction almost overnight. It used
+          a <strong>neural network</strong> trained on graphics cards, and this
+          is the point where the modern approach took over.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">2016</span> AlphaGo wins at Go</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          Go has far more possible positions than chess, so the Deep Blue
+          approach of checking every move does not work. DeepMind's AlphaGo beat
+          the top player Lee Sedol by learning patterns instead. One of its moves
+          was so unusual that commentators assumed it was a mistake.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">2017</span> Transformers</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          A research paper introduced a design called the transformer, which
+          handles language much better than what came before. Every well known
+          chatbot today is built on this idea, which is what the GPT in ChatGPT
+          stands for.
+        </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <button class="timeline-button" aria-expanded="false"><span class="timeline-year">2022</span> ChatGPT reaches everyone</button>
+        <div class="timeline-panel" hidden>
+        <p>
+          The technology had existed for years, but ChatGPT put it behind a text
+          box anyone could use. It reached a hundred million users faster than
+          any app before it, and it is the reason most people started paying
+          attention to AI at all.
+        </p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>The pattern worth noticing</h2>
+    <p>
+      Reading the dates together, AI has gone through several rounds of loud
+      excitement followed by a quiet collapse. Some of what is promised now will
+      arrive and some will not, and the history is a reasonable guide to being
+      careful about which is which.
+    </p>
+
+   </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width footer-row">
+    <p>&copy; 2026 AI Explained. Built for AS91907.</p>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../what-is-ai.html">What is AI?</a></li>
+      <li><a href="../applications.html">Applications</a></li>
+      <li><a href="../ethics.html">Ethics</a></li>
+      <li><a href="../history.html">History</a></li>
+      <li><a href="../glossary.html">Glossary</a></li>
+      <li><a href="../quiz.html">Quiz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<script src="accordion.js"></script>
+</body>
+</html>
