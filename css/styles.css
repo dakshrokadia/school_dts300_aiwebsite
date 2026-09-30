@@ -239,6 +239,26 @@ a {
   color: var(--grey-text);
 }
 
+/* On phones the big headings wrapped onto 4 lines and the home banner
+   filled the whole screen, so they are made smaller here */
+@media (max-width: 767px) {
+  .home-banner {
+    padding: 32px 0;
+  }
+
+  .home-banner h1 {
+    font-size: 30px;
+  }
+
+  .page-banner {
+    padding: 24px 0;
+  }
+
+  .page-banner h1 {
+    font-size: 26px;
+  }
+}
+
 
 /* Page content */
 
