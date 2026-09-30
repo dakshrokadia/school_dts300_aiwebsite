@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trial 3, palette B - AI Explained</title>
+<meta name="description" content="A plain language explanation of what artificial intelligence actually is, how it differs from ordinary software, and what it cannot do.">
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  /* Trial 3, palette B. Only the colours change. This works because every
+     colour in styles.css comes from these variables. */
+  :root {
+    --bg: #fbf8f3;
+    --grey-bg: #f1ebe0;
+    --text: #2b2724;
+    --grey-text: #5e5750;
+    --blue: #0f6b62;
+    --border: #ddd3c4;
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="page-width header-row">
+    <a class="site-logo" href="../index.html">AI <span>Explained</span></a>
+
+    <button class="menu-button" aria-expanded="false" aria-controls="main-menu">
+      <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../what-is-ai.html" aria-current="page">What is AI?</a></li>
+        <li><a href="../applications.html">Applications</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../history.html">History</a></li>
+        <li><a href="../glossary.html">Glossary</a></li>
+        <li><a href="../quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="page-width">
+    <h1>What is AI?</h1>
+    <p>The short version: software that learns patterns from examples instead of being told the rules.</p>
+  </div>
+</div>
+
+<main id="main">
+  <div class="page-width">
+   <div class="text-column">
+
+    <figure>
+      <img src="../images/what-is-ai-search.png" alt="A search box with the words What is AI typed into it, showing suggested searches underneath.">
+      <figcaption>"What is AI" is one of the most searched questions about technology. This page is an attempt at a straight answer.</figcaption>
+    </figure>
+
+    <h2>Starting with the name</h2>
+    <p>
+      Artificial intelligence is a label for computer systems that do things we
+      would normally call thinking: recognising a face, understanding a
+      sentence, spotting something odd in a medical scan. It is a broad term,
+      and that is part of why it gets confusing. A spam filter and a
+      self-driving car are both described as AI, and they have very little in
+      common.
+    </p>
+    <p>
+      The word "intelligence" also does more work than it should. These systems
+      are not thinking in the way a person does. They are finding patterns in
+      very large amounts of information, then using those patterns to make a
+      guess about something new.
+    </p>
+
+    <h2>How it differs from ordinary software</h2>
+    <p>
+      Normal software follows rules a person wrote. If you build a program to
+      spot spam email, you might write rules like "if the subject line is in
+      capitals and mentions a prize, mark it as spam". A human decides every
+      rule in advance.
+    </p>
+    <p>
+      AI works the other way round. Instead of writing the rules, you show the
+      system thousands of emails that people have already sorted into spam and
+      not spam. It works out for itself which patterns tend to separate the two.
+      Nobody writes down "capital letters are suspicious". The system notices it.
+    </p>
+    <p>
+      That difference matters for a practical reason. Because nobody wrote the
+      rules, nobody can always explain exactly why the system made a particular
+      decision. This comes up again on the <a href="../ethics.html">ethics page</a>,
+      because it makes some AI decisions hard to challenge.
+    </p>
+
+    <h2>What "training" means</h2>
+    <p>
+      <strong>Training</strong> is the process of showing a system
+      examples until it gets good at the task. The examples are called
+      <strong>training data</strong>, and the result is called a
+      <strong>model</strong>: the thing that has learned the patterns
+      and can now be used on new information.
+    </p>
+    <p>
+      An easy way to picture it: if you looked at ten thousand photos labelled
+      "cat" or "not a cat", you would eventually get a feel for what makes a cat
+      a cat, without ever writing down a definition. Training is that, done by a
+      computer, at a much larger scale.
+    </p>
+    <p>
+      This is also why training data matters so much. A system that only ever
+      saw photos of ginger cats will do badly on a black one. It did not learn
+      what a cat is. It learned what the examples it was given looked like.
+    </p>
+
+    <h2>Words you will hear</h2>
+    <ul>
+      <li>
+        <strong>Machine learning</strong> is the general name for
+        software that learns from examples rather than following written rules.
+        Most of what people call AI today is machine learning.
+      </li>
+      <li>
+        <strong>Neural network</strong> is one method for doing it,
+        loosely inspired by how brain cells connect. The comparison is looser
+        than it sounds, and you do not need to understand brains to understand
+        what it does.
+      </li>
+      <li>
+        <strong>Large language model</strong>, often shortened to LLM,
+        is a system trained on enormous amounts of text so it can predict what
+        words come next. Chatbots are built on these.
+      </li>
+      <li>
+        <strong>Algorithm</strong> just means a set of steps for doing
+        something. It is much older and much more boring than the news makes it
+        sound. A recipe is an algorithm.
+      </li>
+    </ul>
+    <figure>
+      <img src="../images/neural-network.png" alt="Diagram of a deep neural network. Five input circles connect to three columns of hidden circles, which connect to three output circles.">
+      <figcaption>A neural network. Information comes in on the left, passes through the middle layers where the patterns are stored, and a result comes out on the right.</figcaption>
+    </figure>
+
+    <p>
+      All of these are defined again on the
+      <a href="../glossary.html">glossary page</a>.
+    </p>
+
+    <h2>What it cannot do</h2>
+    <p>
+      AI systems do not understand what they are saying or seeing. A language
+      model that writes a convincing paragraph about New Zealand history has no
+      idea what New Zealand is. It has learned which words tend to follow other
+      words.
+    </p>
+    <p>
+      That leads to a specific and well known problem: these systems will state
+      something false with exactly the same confidence as something true,
+      because confidence is not something they measure. They produce the most
+      likely looking answer, and the most likely looking answer is sometimes
+      wrong.
+    </p>
+    <p>
+      They also cannot do anything genuinely outside their training. A model
+      trained on English text will not suddenly work in Te Reo. A model trained
+      on photos from 2015 knows nothing about 2026.
+    </p>
+
+    <h2>Where to go next</h2>
+    <p>
+      Now that the basic idea is in place, the
+      <a href="../applications.html">applications page</a> covers where this is
+      already being used, and the <a href="../ethics.html">ethics page</a> covers
+      what people are arguing about.
+    </p>
+
+   </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width footer-row">
+    <p>&copy; 2026 AI Explained. Built for AS91907.</p>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../what-is-ai.html">What is AI?</a></li>
+      <li><a href="../applications.html">Applications</a></li>
+      <li><a href="../ethics.html">Ethics</a></li>
+      <li><a href="../history.html">History</a></li>
+      <li><a href="../glossary.html">Glossary</a></li>
+      <li><a href="../quiz.html">Quiz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
