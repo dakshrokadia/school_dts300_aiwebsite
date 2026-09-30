@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trial 1, option A: nav bar - AI Explained</title>
+<meta name="description" content="An introduction to artificial intelligence for people who are new to the subject.">
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  /* Trial 1, option A: no Menu button, the links always show on a phone */
+  .menu-button { display: none !important; }
+  .main-menu { display: block; width: auto; border-top: none; padding-top: 0; }
+  .main-menu ul { flex-direction: row !important; gap: 4px 20px !important; }
+  .main-menu a { padding: 6px 0 !important; }
+  .main-menu a[aria-current="page"] { border-left: none !important; padding-left: 0 !important; border-bottom: 2px solid var(--blue) !important; }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="page-width header-row">
+    <a class="site-logo" href="../index.html">AI <span>Explained</span></a>
+
+    <button class="menu-button" aria-expanded="false" aria-controls="main-menu">
+      <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main">
+      <ul>
+        <li><a href="../index.html" aria-current="page">Home</a></li>
+        <li><a href="../what-is-ai.html">What is AI?</a></li>
+        <li><a href="../applications.html">Applications</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../history.html">History</a></li>
+        <li><a href="../glossary.html">Glossary</a></li>
+        <li><a href="../quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="home-banner">
+  <div class="page-width">
+    <h1>Artificial intelligence, explained properly</h1>
+    <p class="tagline">No jargon, no hype, and nothing assumed.</p>
+    <p>
+      Artificial intelligence turns up in the news every day, usually described
+      either as the answer to everything or the end of the world. This site
+      explains what it actually is, where it is already being used, and what
+      people are arguing about, in language that does not assume you have seen
+      any of it before.
+    </p>
+    <a class="button" href="../what-is-ai.html">Start with the basics</a>
+  </div>
+</div>
+
+<main id="main">
+  <div class="page-width">
+    <figure>
+      <img src="../images/ai-chip.png" alt="A computer chip with the letters AI on it, sitting in the middle of a circuit board.">
+      <figcaption>AI is software, not a robot. Most of it runs on ordinary computer hardware like this.</figcaption>
+    </figure>
+
+    <h2>Where to start</h2>
+    <ul class="card-grid">
+      <li class="card">
+        <h3>What is AI?</h3>
+        <p>The core ideas, explained without the jargon. Start here if the term has never been properly explained to you.</p>
+      </li>
+      <li class="card">
+        <h3>Applications</h3>
+        <p>Where AI is already being used, from the recommendations on your phone to medical imaging.</p>
+      </li>
+      <li class="card">
+        <h3>Ethics</h3>
+        <p>Bias, privacy, jobs and misinformation. The arguments people are actually having.</p>
+      </li>
+      <li class="card">
+        <h3>History</h3>
+        <p>How the field got from a 1950s thought experiment to the tools people use today.</p>
+      </li>
+      <li class="card">
+        <h3>Glossary</h3>
+        <p>Every technical word used on this site, defined in one place.</p>
+      </li>
+      <li class="card">
+        <h3>Quiz</h3>
+        <p>A short quiz to check what stuck. Every answer is somewhere on this site.</p>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width footer-row">
+    <p>&copy; 2026 AI Explained. Built for AS91907.</p>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../what-is-ai.html">What is AI?</a></li>
+      <li><a href="../applications.html">Applications</a></li>
+      <li><a href="../ethics.html">Ethics</a></li>
+      <li><a href="../history.html">History</a></li>
+      <li><a href="../glossary.html">Glossary</a></li>
+      <li><a href="../quiz.html">Quiz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
