@@ -2,13 +2,15 @@
 
 
 /* All the colours are set here in one place so they are easy to change later */
+/* Cream and teal, picked in Trial 3. --blue is now teal but kept its name
+   so nothing else in the file had to change. */
 :root {
-  --bg: #ffffff;
-  --grey-bg: #f3f6fa;
-  --text: #1a1d21;
-  --grey-text: #55606d;
-  --blue: #1f4e79;
-  --border: #d5dde6;
+  --bg: #fbf8f3;
+  --grey-bg: #f1ebe0;
+  --text: #2b2724;
+  --grey-text: #5e5750;
+  --blue: #0f6b62;
+  --border: #ddd3c4;
   --green: #2e7d46;
   --red: #b3261e;
 }
